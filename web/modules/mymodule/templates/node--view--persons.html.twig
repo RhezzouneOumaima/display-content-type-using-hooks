@@ -1,0 +1,10 @@
+{#{% set id= content.field_titre.0["#context"].value %}#}
+<div class="card" style="width: 18rem;">
+{{ elements.field_image_person }}
+  <div class="card-body">
+    <h5 class="card-title">{{ elements.field_name.0["#context"].value }}</h5>
+    <p class="card-text">{{ elements.field_mail.0["#context"].value }}</p>
+        <p class="card-text">{{ elements.field_adress.0["#context"].value }}</p>
+ <a href={{ path('entity.node.canonical', {'node': elements['#node'].id()  }) }} class="btn btn-primary">En savoir plus</a>
+  </div>
+</div> 
